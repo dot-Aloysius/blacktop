@@ -5,9 +5,6 @@
 package frc.robot;
 
 import frc.robot.Constants.DriverConstants;
-import frc.robot.commands.Shoot;
-import frc.robot.subsystems.Indexer;
-import frc.robot.subsystems.Shooter;
 import frc.robot.subsystems.Swerve;
 
 import java.util.function.Supplier;
@@ -36,8 +33,6 @@ public class RobotContainer {
 	// private final Shooter shooter = new Shooter();
 	// private final Indexer indexer = new Indexer();
 	private final Swerve swerve = new Swerve();
-
-	private Trigger shoot = new Trigger(() -> driveController.getYButton());
 
 	public RobotContainer() {
 		// Configure the trigger bindings
